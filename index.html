@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5" style="width: 100vw;">
+        <div class="site-title-section">
+        <h1 class="site-title">Timeline Through Tech: An Interactive Journey</h1>
+        <p><img id="scroll" src="./assets/scroll.svg">Scroll through the decades</p>
+        <p><img id="cursor" src="./assets/cursor.svg">Select a year on the timeline to view the history</p>
+        <p style="margin-left: 1%; margin-top: -10px;" >Click a <img id="lightbulb" src="./assets/lightbulb.svg">to view a quick fact</p>
+        
+    </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div> 
+            <section id="1990s-section" class="timeline-section">
+                <div class="title-information">
+                <h1 class="section-title">1990s</h1>
+                <p>The 1990s were a pivotal decade for technology, marking the transition from analog to digital. The rise of personal computers and the internet laid the groundwork for the digital age. During this decade, technology began to penetrate everyday life, moving from business and academia into homes worldwide. Personal computing became more accessible, with graphical user interfaces making technology easier to use. The internet emerged as a powerful tool for communication and information, leading to a profound transformation in how people interacted with the world around them.</p>
+            </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>1991</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>1991</h2>
+                                <h5>Introduction of the World Wide Web</h5>
+                                <p>Tim Berners-Lee introduced the World Wide Web, providing a new way to access and share information. This breakthrough laid the foundation for the internet as we know it today, transforming communication, commerce, and entertainment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-1">
+                    <img src="./assets/vintagecomputer.svg">
+                </div>
+                <div class="image-2">
+                    <img src="./assets/floppydisk.svg">
+                </div>
+                
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>1993</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>1993</h>
+                                <h5> Mosaic Browser Launch</h5>
+                                <p>The Mosaic web browser made the internet more accessible with its graphical user interface. It paved the way for the widespread adoption of the web, leading to the development of future browsers and internet technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>1995</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>1995</h2>
+                                <h5>Windows 95 Release</h5>
+                                <p>Microsoft launched Windows 95, which featured a user-friendly interface and became a cornerstone in personal computing. It brought the PC into millions of homes and businesses, marking a significant step in the digital transition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>1997</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>1997</h>
+                                <h5> Introduction of DVDs</h5>
+                                <p>The introduction of DVDs marked a significant advancement in digital storage, offering greater capacity than CDs and becoming a popular medium for movies and data storage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="2000s-section" class="timeline-section">
+                <div class="title-information">
+                    <h1 class="section-title">2000s</h1>
+                    <p>The 2000s saw the internet become integral to daily life, with significant advancements in digital connectivity and the beginning of the mobile revolution. Despite the volatility of the dot-com bubble burst, the internet continued to grow in importance. Broadband internet became widespread, transforming how people accessed information and entertainment. The rise of social media began to change the landscape of communication, and the introduction of smartphones revolutionized mobile technology, making the internet portable and ubiquitous. These advancements laid the groundwork for the interconnected, always-online world we live in today.</p>
+                </div>
+                <div class="image-1">
+                    <img src="./assets/blackberry.svg">
+                </div>
+                <div class="image-2">
+                    <img src="./assets/laptop.svg">
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2000</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2000</h2>
+                                <h5>Y2K and the Dot-Com Boom</h5>
+                                <p>The Y2K scare highlighted the reliance on digital systems, and the dot-com boom showed the potential and volatility of internet-based businesses. Despite the bubble burst, the internet's role continued to grow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2001</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2001</h2>
+                                <h5>Broadband Internet Expansion</h5>
+                                <p>The expansion of broadband internet brought faster and more reliable connections, enabling the growth of rich online content, streaming services, and more sophisticated web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2004</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2004</h2>
+                                <h5>Facebook Launches</h5>
+                                <p>Mark Zuckerberg launched Facebook, a social networking site initially aimed at college students. Facebook rapidly grew, changing the way people connect and communicate online, and setting the stage for the rise of social media platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2007</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2007</h2>
+                                <h5> Release of the First iPhone</h5>
+                                <p>Apple's iPhone introduced a revolutionary device that combined phone, iPod, and internet communication. Its innovative touchscreen interface and app ecosystem sparked the smartphone revolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fact">
+                    <img src="./assets/lightbulb.svg" class="toggle-fact" style="cursor: pointer;">
+                    <p class="fact-text" style="opacity: 0;">In the 1990s, the internet revolution began in earnest with the public launch of the World Wide Web, turning a network of academic and military computers into a global communications powerhouse that reshaped society.</p>
+                </div>
+                
+            </section>
+            <section id="2010s-section" class="timeline-section">
+                <div class="title-information">
+                    <h1 class="section-title">2010s</h1>
+                    <p>The 2010s were defined by the rapid adoption of smart technology, as devices became increasingly interconnected and social media revolutionized communication. This decade witnessed the widespread use of smartphones, tablets, and wearables, integrating technology into everyday life more personally. Social media platforms expanded massively, altering how people connect, share, and consume information. The introduction of smart home devices and voice-activated assistants added convenience and automation to daily routines. Additionally, progress in electric vehicles and renewable energy began addressing environmental issues, setting the stage for a sustainable future.</p>
+                </div>
+                <div class="image-1">
+                    <img src="./assets/cloudcomputing.svg">
+                </div>
+                <div class="image-2">
+                    <img src="./assets/iphone.svg">
+                </div>
+        
+                <h1 class="section-title">2010s</h1>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2010</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2010</h2>
+                                <h5>Introduction of the iPad</h5>
+                                <p>Apple's iPad popularized tablets, offering a new form of personal computing that bridged the gap between smartphones and laptops. Its versatility made it a favorite for both casual and professional use.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2012</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line " style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2012</h>
+                                <h5> Tesla Model S Launch</h5>
+                                <p>Tesla's Model S, an all-electric luxury sedan, proved that electric vehicles could be both practical and desirable. It accelerated the shift towards sustainable transportation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2014</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2014</h2>
+                                <h5> Introduction of Amazon Echo</h5>
+                                <p>Amazon's Echo, powered by the voice assistant Alexa, brought voice-activated assistance and smart home integration to the mainstream, making everyday tasks more convenient.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2016</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2016</h>
+                                <h5>Pokemon GO Release</h5>
+                                <p>Niantic's Pokemon GO demonstrated the potential of augmented reality (AR) technology, engaging users in new and innovative ways and highlighting the capabilities of mobile devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fact" style="margin-top: 90px;">
+                    <img src="./assets/lightbulb.svg" class="toggle-fact" style="cursor: pointer;">
+                    <p class="fact-text" style="opacity: 0;">In the 2000s, the introduction of smartphones, epitomized by the release of the first iPhone in 2007, revolutionized mobile technology by combining a phone, an iPod, and an internet communicator into a single device, sparking the smartphone era.</p>
+                </div>
+            </section>
+            <section id="2020s-section" class="timeline-section">
+                <div class="title-information">
+                    <h1 class="section-title">2020s</h1>
+                    <p>The COVID-19 pandemic accelerated digital transformation, leading to widespread adoption of remote work, telehealth, and online education. AI advancements, including real-time language translation and enhanced data analytics, have become integral, improving efficiency and communication. Meanwhile, autonomous vehicles edge closer to mainstream use, and quantum computing starts unlocking new potential. These developments are reshaping industries and promising significant improvements in quality of life.</p>
+                </div>
+                <div class="image-1">
+                    <img src="./assets/machinelearning.svg">
+                </div>
+                <div class="fact">
+                    <img src="./assets/lightbulb.svg" class="toggle-fact" style="cursor: pointer;">
+                    <p class="fact-text" style="opacity: 0;">In the 2010s, social media platforms like Facebook, Instagram, and Twitter reshaped global communication, allowing users to share real-time updates, photos, and videos, significantly influencing both personal interactions and broad societal trends.</p>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2020</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2020</h2>
+                                <h5>COVID-19 Accelerates Digital Transformation</h5>
+                                <p>The COVID-19 pandemic accelerated digital transformation across industries. Remote work, telehealth, and online education became essential, driving rapid adoption of digital tools and technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2021</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line" style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2021</h>
+                                <h5>Real-Time Language Translation</h5>
+                                <p>AI-powered real-time language translation became a reality, breaking down communication barriers across the globe. Services like Google Translate and devices such as Pocketalk offer seamless translation, enhancing global communication and collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2022</p>
+                        <div class="line-dot-container-first position-absolute top-100 start-50 translate-middle-y">
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="line" style="height: 2px"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; right: 100%; top: -50%; transform: translateY(50%);">
+                                <h2>2022</h2>
+                                <h5>Breakthroughs in Machine Learning and AI</h5>
+                                <p>2022 saw significant advancements in machine learning and AI, driving innovation across various industries. AI algorithms became more sophisticated, enabling accurate predictive analytics, personalized recommendations, and efficient automation. Advances in NLP led to more effective virtual assistants and chatbots, enhancing customer experiences and business operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item text-center my-5">
+                    <div class="timeline-dot mx-auto position-relative d-flex align-items-center justify-content-center" style="height: 2em; width: 2em; border-radius: 50%; background-color: white;" onclick="toggleAnimation(this)">
+                        <p>2023</p>
+                        <div class="line-dot-container-second position-absolute top-100 start-50 translate-middle-y">
+                            <div class="line " style="height: 2px"></div>
+                            <div class="small-dot" style="height: 10px; width: 10px; border-radius: 50%;"></div>
+                            <div class="text-container position-absolute" style="opacity: 0; left: 10%; top: -50%; transform: translateY(50%);">
+                                <h2>2023</h>
+                                <h5>Advances in Quantum Computing</h5>
+                                <p>Major strides in quantum computing by companies like IBM and Google achieved milestones in quantum supremacy, promising to revolutionize fields such as cryptography, materials science, and complex problem-solving. Quantum computers can process complex calculations at unprecedented speeds, opening new possibilities for AI and machine learning applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
