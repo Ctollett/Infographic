@@ -8,7 +8,7 @@ function toggleAnimation(dotElement) {
     let textContainer = container.querySelector('.text-container');
     let images = container.querySelectorAll('.image-1'); 
 
-    if (line.style.width === '10em') {
+    if (line.style.width === '20em') {
         // Line is currently extended, start retracting it
         gsap.to(textContainer, {opacity: 0, duration: 0.1, onComplete: () => {
             gsap.to(line, {width: 0, duration: 0.1,});
@@ -31,7 +31,7 @@ function toggleAnimation(dotElement) {
                 dotElement.classList.add('active');
             }
         });
-        gsap.to(line, {width: '10em', duration: 0.3});
+        gsap.to(line, {width: '20em', duration: 0.3});
         gsap.to(smallDot, {opacity: 1, duration: 0.3});
         gsap.to(textContainer, {opacity: 1, delay: 0.5, duration: 0.5, onComplete: () => {
             dotElement.dataset.isAnimating = 'false';
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 toggleActions: "play none none reverse",  
             },
             opacity: 1,
-            y: 200,  
+            y: 250,  
             duration: 1,  
             ease: "power4.out"  
         });
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             },
             opacity: 1,
-            y: 200,  
+            y: 250,  
             duration: 1,  
             ease: "power4.out"  
         });

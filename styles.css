@@ -9,13 +9,14 @@
 
 body {
     background: -webkit-radial-gradient(circle, hsla(179, 31%, 38%, 1) 0%, hsla(212, 81%, 4%, 1) 100%);
+  
 
     
 }
 
 
 section {
-    padding-top: 50px;
+ 
     height: 100vh;
 }
 
@@ -31,48 +32,52 @@ section {
 }
 
 .title-information {
-    width: 30%;
+    width: 40%;
+    margin-right: 20%;
+    margin-left: 5px;
     height: 100px;
-    margin-left: 82px;
+    padding-bottom: 20%;
+
 }
 
 .title-information p {
     color: white;
-    font-size: 40%;
+    font-size: 80%;
+    padding-right: 10%;
 }
 
 .site-title-section p{
-    font-size: 8px;
+    font-size: 20px;
     width: 100%;
-    height: 20px;
+    height: 50px;
+
 
 }
 
 #scroll{
-    width: 30px;
+    width: 50px;
     margin-right: 5px;
     margin-left: 2px;
     filter: invert(100%);
 }
 
 #cursor{
-    width: 15px;
+    width: 25px;
     margin-right: 12px;
     margin-left: 10px;
     filter: invert(100%);
 }
 
 #lightbulb{
-    width: 25px;
+    width: 35px;
 
 }
 
 
 .site-title{
-    font-size: 25px;
+    font-size: 55px;
     font-weight: 600;
     width: 60%;
-
 }
 
 .timeline-line {
@@ -93,8 +98,8 @@ section {
 }
 
 .timeline-dot {
-    height: 20px;
-    width: 20px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: white;
     position: relative;
@@ -103,11 +108,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #42858C;
+    border: 4px solid #42858C;
 }
 
 .timeline-dot p{
-   font-size: 8px;
+   font-size: 15px;
    margin-top: 15px;
    
 }
@@ -122,8 +127,8 @@ section {
 }
 
 .image-1 img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     filter: invert(100%);
 
@@ -132,25 +137,25 @@ section {
 .image-2 {
     position: absolute;
     right: 10%;
-    left: 25%;
+    left: 15%;
     overflow: hidden;
     width: 30%;
-    top: 500px;
+    top: 800px;
     
 }
 
 
 .image-2 img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     filter: invert(100%);
 }
 
 .fact img {
-    margin-top: 5px;
-    width: 50px;
-    height: 50px;
+
+    width: 150px;
+    height: 150px;
 }
 
 .fact {
@@ -161,19 +166,17 @@ section {
     position: absolute;
     font-size: 8px;
     color: white;
-    top: -70px;
-    right: 0%;
-    width: 30%;
+    top: -230px;
+    right: 20%;
+    width: 50%;
     border-radius: 50%;
-    left: 60%;
+    left: 65%;
 
 }
 
 .fact p{
-    margin-left: 5%;
-    margin-top: 10%;
-    width: 100%;
-    font-size: 6px;
+    width: 60%;
+    font-size: 12px;
 
 }
 
@@ -234,13 +237,14 @@ section {
 
 .section-title {
     position: absolute; 
-    top: 45%; 
-    left: 0%;
+    top: 50%; 
+    left: -20%;
+    right: 20%;
     font-weight: bold;
     transform: rotate(-90deg);
     transform-origin: left top;
     white-space: nowrap;
-    font-size: 65px;
+    font-size: 155px;
     opacity: 40%;
     color: #5DA399;
  z-index: 10; 
@@ -265,26 +269,26 @@ section {
 
 
 .text-container p {
-    font-size: 5px;
+    font-size: 12px;
     width: 80%;
     height: 50%;
 
 }
 
 .text-container h2 {
-    font-size: 20px;
+    font-size: 30px;
     width: 140px;
-    height: 20px;
+    height: 50px;
 
 }
 
 .text-container h5 {
-    font-size: 10px; 
+    font-size: 15px; 
     width: 70%;
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .section-title, .section-title-2 {
         display: none;
     }
